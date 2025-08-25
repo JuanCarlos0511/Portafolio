@@ -5,15 +5,21 @@ import { defineConfig } from 'astro/config';
 export default defineConfig({
   site: 'https://JuanCarlos0511.github.io',
   base: '/Portafolio',
+  trailingSlash: 'always',
   build: {
-    // Asegúrate de que todas las rutas de assets sean consistentes
-    assets: 'assets'
+    assets: 'assets',
   },
   vite: {
-    // Configuración de Vite para manejar rutas de assets
     build: {
-      cssCodeSplit: true,
+      cssCodeSplit: false, // Esto puede ayudar a reducir los problemas de rutas
       assetsInlineLimit: 0,
-    }
+      manifest: true,
+    },
+    ssr: {
+      noExternal: ['*'],
+    },
+    server: {
+      origin: 'http://localhost:4321', // Solo para desarrollo
+    },
   }
 });

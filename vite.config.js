@@ -1,12 +1,10 @@
 import { defineConfig } from 'vite';
 
 export default defineConfig({
+  // Para despliegue en GitHub Pages con el base path /Portafolio/
+  base: '',
   build: {
-    // Asegura que los assets usen rutas relativas
-    assetsDir: '_assets',
-    // Usar rutas relativas en lugar de absolutas
-    cssCodeSplit: true,
-    // Configuración de base para las rutas
-    base: './',
+    // Coloca todos los assets en la carpeta 'assets'
+    assetsDir: 'assets'
   }
 });

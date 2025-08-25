@@ -4,9 +4,10 @@
   "version": "0.0.1",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
+    "build": "astro build && node fix-paths.js",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "fix-paths": "node fix-paths.js"
   },
   "dependencies": {
     "astro": "^5.13.3"
