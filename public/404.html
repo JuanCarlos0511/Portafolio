@@ -5,11 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Página no encontrada - JuanCarlos0511</title>
   <script>
-    // Si la URL contiene /Portafolio/ pero falla en cargar recursos,
-    // redirijamos a la página principal
+    // Redirigir a la página principal si hay errores
     const path = window.location.pathname;
-    if (path.startsWith('/Portafolio/')) {
-      window.location.href = '/Portafolio/';
+    if (path.includes('404') || path.includes('error')) {
+      setTimeout(() => {
+        window.location.href = '/';
+      }, 3000);
     }
   </script>
   <style>
@@ -53,7 +54,7 @@
   <div class="container">
     <h1>404 - Página no encontrada</h1>
     <p>Lo sentimos, la página que buscas no existe o ha sido movida.</p>
-    <a href="/Portafolio/" class="btn">Volver al inicio</a>
+    <a href="/" class="btn">Volver al inicio</a>
   </div>
 </body>
 </html>

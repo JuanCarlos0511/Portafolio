@@ -2,37 +2,39 @@
 // WhyMe.astro - Sección "Por qué elegirme"
 const features = [
   {
-    icon: '🚀',
-    title: 'Most Eligible Assured',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+    icon: '�',
+    title: 'Team Collaboration',
+    description: 'Experience in collaborative environments, participating in academic and professional projects that require effective coordination and communication.'
   },
   {
-    icon: '💡',
-    title: 'Most Eligible Assured',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
-  },
-  {
-    icon: '⚡',
-    title: 'Most Eligible Assured',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+    icon: '�',
+    title: 'Effective Communication',
+    description: 'Ability to convey ideas clearly and concisely, facilitating team collaboration and understanding of client requirements.'
   },
   {
     icon: '🎯',
-    title: 'Most Eligible Assured',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+    title: 'Client Oriented',
+    description: 'Commitment to client satisfaction, ensuring their needs and expectations are met effectively with quality solutions.'
+  },
+  {
+    icon: '�',
+    title: 'Production Ready',
+    description: 'Experience developing projects taken to production, including point of sale systems and functional web applications for real clients.'
   }
 ];
 
 const languages = [
   {
     name: 'Español',
-    level: 'Nativo',
-    flag: '🇪🇸'
+    level: 'Native',
+    flag: '🇪🇸',
+    gradient: 'linear-gradient(135deg, #ff0000, #f1ff1d)'
   },
   {
     name: 'English',
-    level: 'Fluent',
-    flag: '🇺🇸'
+    level: 'Competent', 
+    flag: '🇺🇸',
+    gradient: 'linear-gradient(135deg, #0400ff, #ffffff)'
   }
 ];
 ---
@@ -42,10 +44,7 @@ const languages = [
     <div class="why-me-text">
       <h2>Why me?</h2>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-        minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-        ex ea commodo consequat.
+        Developer since age 15 with a technical programming background from CBTIS No. 103. Currently pursuing Systems Engineering at Universidad Autónoma de Tamaulipas while working on real production projects. My combination of academic knowledge and practical experience allows me to deliver quality solutions efficiently.
       </p>
       
       <!-- Sección de idiomas -->
@@ -53,7 +52,7 @@ const languages = [
         <h3>Languages I speak</h3>
         <div class="languages-grid">
           {languages.map((language) => (
-            <div class="language-item">
+            <div class="language-item" style={`--language-gradient: ${language.gradient}`}>
               <span class="language-flag">{language.flag}</span>
               <div class="language-info">
                 <span class="language-name">{language.name}</span>
@@ -71,8 +70,10 @@ const languages = [
           <div class="feature-icon">
             <span>{feature.icon}</span>
           </div>
-          <h3>{feature.title}</h3>
-          <p>{feature.description}</p>
+          <div class="feature-content">
+            <h3>{feature.title}</h3>
+            <p>{feature.description}</p>
+          </div>
         </div>
       ))}
     </div>
@@ -98,9 +99,15 @@ const languages = [
 
 .why-me-text h2 {
   font-size: 3rem;
-  font-weight: 700;
+  font-weight: normal;
   color: var(--text-light);
   margin-bottom: 1.5rem;
+  font-family: var(--font-titles);
+  letter-spacing: 0.02em;
+  background: linear-gradient(135deg, var(--text-light) 0%, var(--accent-blue) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .why-me-text p {
@@ -108,6 +115,7 @@ const languages = [
   color: var(--text-muted);
   line-height: 1.7;
   margin-bottom: 2rem;
+  font-family: var(--font-content);
 }
 
 /* Sección de idiomas */
@@ -118,14 +126,22 @@ const languages = [
 .languages-section h3 {
   color: var(--text-light);
   font-size: 1.5rem;
+  font-weight: normal;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-family: var(--font-titles);
+  letter-spacing: 0.01em;
+}
+  font-size: 1.5rem;
   font-weight: 600;
   margin-bottom: 1.5rem;
 }
 
 .languages-grid {
   display: flex;
-  gap: 1.5rem;
+  gap: 2rem;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .language-item {
@@ -139,13 +155,43 @@ const languages = [
   transition: all 0.3s ease;
   backdrop-filter: blur(10px);
   min-width: 200px;
+  position: relative;
+  overflow: hidden;
+}
+
+.language-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--language-gradient);
+  opacity: 0.15;
+  transition: opacity 0.3s ease;
+  z-index: -1;
 }
 
 .language-item:hover {
   background: rgba(255, 255, 255, 0.08);
   transform: translateY(-2px);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
-  border-color: rgba(233, 69, 96, 0.3);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.language-item:hover::before {
+  opacity: 0.3;
+}
+
+.language-item:hover .language-flag {
+  transform: scale(1.1);
+}
+
+.language-item:hover .language-name {
+  background: var(--language-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
 .language-flag {
@@ -158,6 +204,7 @@ const languages = [
   background: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   flex-shrink: 0;
+  transition: all 0.3s ease;
 }
 
 .language-info {
@@ -170,12 +217,16 @@ const languages = [
   color: var(--text-light);
   font-weight: 600;
   font-size: 1.1rem;
+  transition: all 0.3s ease;
+  font-family: var(--font-content);
 }
 
 .language-level {
   color: var(--text-muted);
   font-size: 0.9rem;
   font-weight: 500;
+  transition: color 0.3s ease;
+  font-family: var(--font-content);
 }
 
 .features-grid {
@@ -190,10 +241,11 @@ const languages = [
   border-radius: 15px;
   padding: 1.5rem;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 1rem;
   transition: all 0.3s ease;
   backdrop-filter: blur(10px);
+  min-height: 120px;
 }
 
 .feature-card:hover {
@@ -211,24 +263,39 @@ const languages = [
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+  margin-top: 0.2rem;
 }
 
 .feature-icon span {
   font-size: 1.5rem;
 }
 
+.feature-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1;
+  min-height: 60px;
+}
+
 .feature-card h3 {
   color: var(--text-light);
   font-size: 1.2rem;
-  font-weight: 600;
+  font-weight: normal;
   margin-bottom: 0.5rem;
+  line-height: 1.3;
+  font-family: var(--font-titles);
+  letter-spacing: 0.01em;
 }
 
 .feature-card p {
   color: var(--text-muted);
+  font-family: var(--font-content);
+  line-height: 1.6;
+}
   font-size: 0.95rem;
   line-height: 1.5;
-  flex-grow: 1;
+  margin: 0;
 }
 
 /* Responsive */
@@ -269,7 +336,7 @@ const languages = [
   /* Responsive para idiomas */
   .languages-grid {
     flex-direction: column;
-    gap: 1rem;
+    gap: 1.5rem;
   }
   
   .language-item {

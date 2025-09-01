@@ -1,0 +1,78 @@
+/* Fuentes personalizadas */
+@font-face {
+  font-family: 'Timeburner';
+  src: url('/fonts/Timeburner-xJB8.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Swansea';
+  src: url('/fonts/Swansea-q3pd.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Variables CSS actualizadas con las nuevas fuentes */
+:root {
+  /* Colores existentes */
+  --bg-dark: #0a0a0f;
+  --bg-secondary: #1a1a2e;
+  --text-light: #ffffff;
+  --text-muted: #a8a8b3;
+  --accent-blue: #64b5f6;
+  --light-blue: #81c784;
+  
+  /* Fuentes personalizadas */
+  --font-titles: 'Timeburner', serif;
+  --font-content: 'Swansea', serif;
+  --font-system: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Estilos base para tipografía */
+body {
+  font-family: var(--font-content);
+  line-height: 1.6;
+  color: var(--text-light);
+}
+
+/* Títulos principales */
+h1 {
+  font-family: var(--font-titles);
+  font-weight: normal;
+  letter-spacing: 0.02em;
+}
+
+/* Títulos secundarios */
+h2, h3 {
+  font-family: var(--font-titles);
+  font-weight: normal;
+  letter-spacing: 0.01em;
+}
+
+/* Títulos pequeños y subtítulos */
+h4, h5, h6 {
+  font-family: var(--font-content);
+  font-weight: 600;
+}
+
+/* Contenido general */
+p, span, div, a, li {
+  font-family: var(--font-content);
+}
+
+/* Botones y elementos de navegación mantienen fuente del sistema para mejor legibilidad */
+.btn, .nav-menu, .social-btn {
+  font-family: var(--font-system);
+}
+
+/* Elementos especiales que necesitan fuente de títulos */
+.logo-name,
+.hero-title,
+.section-title,
+.project-title,
+.certificate-title {
+  font-family: var(--font-titles);
+}

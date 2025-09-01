@@ -17,47 +17,114 @@ import WhyMe from '../components/WhyMe.astro';
       <div class="container">
         <h2>Mis Proyectos</h2>
         <div class="projects-grid">
-          <div class="project-card">
+          <div class="project-card" data-type="web">
             <div class="project-image">
-              <div class="placeholder-image">🚀</div>
+              <img src="/project1.png" alt="Clínica Miel" class="project-img" />
+            </div>
+            <div class="project-overlay">
+              <div class="project-buttons">
+                <a href="https://github.com/JuanCarlos0511/proyecto_udm" target="_blank" class="project-btn github-btn">
+                  <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                  </svg>
+                  GitHub
+                </a>
+                <a href="#" target="_blank" class="project-btn demo-btn">
+                  <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z"/>
+                  </svg>
+                  Demo
+                </a>
+              </div>
             </div>
             <div class="project-info">
-              <h3>Proyecto 1</h3>
-              <p>Descripción del proyecto con tecnologías utilizadas.</p>
+              <div class="project-header">
+                <h3>Clínica Miel</h3>
+                <span class="project-type web">WEB</span>
+              </div>
+              <p>Sistema web completo para gestión de clínica médica con administración de pacientes, citas médicas y historiales clínicos.</p>
               <div class="project-tech">
-                <span>React</span>
-                <span>Node.js</span>
-                <span>MongoDB</span>
+                <span>Laravel</span>
+                <span>Blade</span>
+                <span>SQL</span>
+                <span>PHP</span>
               </div>
             </div>
           </div>
           
-          <div class="project-card">
+          <div class="project-card" data-type="mobile">
             <div class="project-image">
-              <div class="placeholder-image">💻</div>
+              <div class="placeholder-image">�</div>
+            </div>
+            <div class="project-overlay">
+              <div class="project-buttons">
+                <a href="https://github.com/usuario/proyecto2" target="_blank" class="project-btn github-btn">
+                  <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                  </svg>
+                  GitHub
+                </a>
+                <a href="#" target="_blank" class="project-btn demo-btn">
+                  <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M17,7H22V17H17V19A1,1 0 0,0 18,20H20V22H17.5C16.95,22 16,21.55 16,21C16,21.55 15.05,22 14.5,22H12V20H14A1,1 0 0,0 15,19V5A1,1 0 0,0 14,4H12V2H14.5C15.05,2 16,2.45 16,3C16,2.45 16.95,2 17.5,2H20V4H18A1,1 0 0,0 17,5V7Z"/>
+                  </svg>
+                  APK
+                </a>
+              </div>
             </div>
             <div class="project-info">
-              <h3>Proyecto 2</h3>
-              <p>Descripción del proyecto con tecnologías utilizadas.</p>
+              <div class="project-header">
+                <h3>Point of Sale System</h3>
+                <span class="project-type web">WEB</span>
+              </div>
+              <p>Complete point of sale system developed with Java and MySQL for inventory management, sales tracking, and customer management in production environment.</p>
               <div class="project-tech">
-                <span>Vue.js</span>
-                <span>Express</span>
-                <span>PostgreSQL</span>
+                <span>Java</span>
+                <span>MySQL</span>
+                <span>Swing</span>
               </div>
             </div>
           </div>
           
-          <div class="project-card">
+          <div class="project-card" data-type="mobile">
             <div class="project-image">
-              <div class="placeholder-image">🎨</div>
+              <div class="placeholder-image">🚌</div>
+            </div>
+            <div class="project-overlay">
+              <div class="project-buttons">
+                <a href="https://github.com/JuanCarlos0511" target="_blank" class="project-btn github-btn">
+                  <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                  </svg>
+                  GitHub
+                </a>
+                <a href="#" target="_blank" class="project-btn demo-btn">
+                  <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z"/>
+                  </svg>
+                  Demo
+                </a>
+              </div>
             </div>
             <div class="project-info">
-              <h3>Proyecto 3</h3>
-              <p>Descripción del proyecto con tecnologías utilizadas.</p>
+              <h3>Public Transport Routes App</h3>
+              <p class="project-description">Mobile application developed with Kotlin for managing and tracking public transportation routes. Features route planning, real-time tracking, and user-friendly interface for passengers.</p>
               <div class="project-tech">
-                <span>Astro</span>
-                <span>TypeScript</span>
-                <span>Tailwind</span>
+                <span>Kotlin</span>
+                <span>Android Studio</span>
+                <span>SQLite</span>
+                <span>Google Maps API</span>
+              </div>
+              <div class="project-overlay">
+                <span class="project-type mobile">📱 Mobile</span>
+                <div class="project-buttons">
+                  <a href="https://github.com/johngmol/transport-routes" target="_blank" class="btn-github">
+                    <i class="fab fa-github"></i> Repository
+                  </a>
+                  <a href="#" class="btn-demo" style="opacity: 0.5; cursor: not-allowed;">
+                    <i class="fas fa-eye"></i> Demo (Mobile Only)
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -65,41 +132,208 @@ import WhyMe from '../components/WhyMe.astro';
       </div>
     </section>
     
-    <!-- Sección de Skills -->
-    <section id="skills" class="skills">
+    <!-- Sección de Trayectoria -->
+    <section id="trayectoria" class="journey">
       <div class="container">
-        <h2>Skills</h2>
-        <div class="skills-grid">
-          <div class="skill-category">
+        <h2>My Journey</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>Production Projects & University Exhibitions</h3>
+              <p class="timeline-date">2023 - Present</p>
+              <p>Developing production-ready projects at Universidad Autónoma de Tamaulipas, including a point of sale system with Java and MySQL, and a functional web application with Laravel-MySQL-Blade for a medical clinic.</p>
+            </div>
+          </div>
+          
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>Systems Engineering Student</h3>
+              <p class="timeline-date">2023 - Present</p>
+              <p>Currently pursuing a Systems Engineering degree at Universidad Autónoma de Tamaulipas, focusing on software development and modern architectures while applying theoretical knowledge to real projects.</p>
+            </div>
+          </div>
+          
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>Academic Projects & Technical Education</h3>
+              <p class="timeline-date">2020 - 2023</p>
+              <p>Participated in project exhibitions at CBTIS No. 103, including a mobile app for public transport route location. Developed static websites with HTML-JS-CSS and mobile apps with Kotlin, earning a Technical Programming degree.</p>
+            </div>
+          </div>
+          
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>Programming Journey Begins</h3>
+              <p class="timeline-date">2020</p>
+              <p>Started programming at age 15 through technical education. This marked the beginning of my passion for software development and problem-solving through code.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de Tools -->
+    <section id="tools" class="tools">
+      <div class="container">
+        <h2>Tools & Technologies</h2>
+        <div class="tools-grid">
+          <div class="tool-category">
             <h3>Frontend</h3>
-            <div class="skill-list">
-              <span>React</span>
-              <span>Vue.js</span>
-              <span>Astro</span>
-              <span>TypeScript</span>
-              <span>CSS/SASS</span>
+            <div class="tool-list">
+              <div class="tool-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5" />
+                <span>HTML5</span>
+              </div>
+              <div class="tool-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3" />
+                <span>CSS3</span>
+              </div>
+              <div class="tool-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" />
+                <span>JavaScript</span>
+              </div>
+              <div class="tool-item">
+                <img src="https://astro.build/assets/press/astro-icon-light.svg" alt="Astro" />
+                <span>Astro</span>
+              </div>
             </div>
           </div>
           
-          <div class="skill-category">
+          <div class="tool-category">
             <h3>Backend</h3>
-            <div class="skill-list">
-              <span>Node.js</span>
-              <span>Python</span>
-              <span>Express</span>
-              <span>FastAPI</span>
-              <span>MongoDB</span>
+            <div class="tool-list">
+              <div class="tool-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-line.svg" alt="Laravel" />
+                <span>Laravel</span>
+              </div>
+              <div class="tool-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP" />
+                <span>PHP</span>
+              </div>
+              <div class="tool-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" />
+                <span>Java</span>
+              </div>
+              <div class="tool-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++" />
+                <span>C++</span>
+              </div>
             </div>
           </div>
           
-          <div class="skill-category">
-            <h3>Herramientas</h3>
-            <div class="skill-list">
-              <span>Git</span>
-              <span>Docker</span>
-              <span>AWS</span>
-              <span>Figma</span>
-              <span>VS Code</span>
+          <div class="tool-category">
+            <h3>Mobile Development</h3>
+            <div class="tool-list">
+              <div class="tool-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg" alt="Kotlin" />
+                <span>Kotlin</span>
+              </div>
+              <div class="tool-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" alt="Flutter" />
+                <span>Flutter</span>
+              </div>
+              <div class="tool-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg" alt="Android" />
+                <span>Android</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="tool-category">
+            <h3>Database & Tools</h3>
+            <div class="tool-list">
+              <div class="tool-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" />
+                <span>MySQL</span>
+              </div>
+              <div class="tool-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git" />
+                <span>Git</span>
+              </div>
+              <div class="tool-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" />
+                <span>GitHub</span>
+              </div>
+              <div class="tool-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code" />
+                <span>VS Code</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de Certificados -->
+    <section id="certificados" class="certificates">
+      <div class="container">
+        <h2>Education & Certifications</h2>
+        <div class="certificates-grid">
+          <div class="certificate-card">
+            <div class="certificate-image">
+              <div class="certificate-icon">�</div>
+            </div>
+            <div class="certificate-info">
+              <h3>Technical Programming Degree</h3>
+              <p class="certificate-issuer">CBTIS No. 103</p>
+              <p class="certificate-date">2020 - 2023</p>
+              <div class="certificate-skills">
+                <span>Programming</span>
+                <span>Software Development</span>
+                <span>Project Management</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="certificate-card">
+            <div class="certificate-image">
+              <div class="certificate-icon">🖥️</div>
+            </div>
+            <div class="certificate-info">
+              <h3>Systems Engineering (In Progress)</h3>
+              <p class="certificate-issuer">Universidad Autónoma de Tamaulipas</p>
+              <p class="certificate-date">2023 - Present</p>
+              <div class="certificate-skills">
+                <span>Software Architecture</span>
+                <span>Database Design</span>
+                <span>System Development</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="certificate-card">
+            <div class="certificate-image">
+              <div class="certificate-icon">📱</div>
+            </div>
+            <div class="certificate-info">
+              <h3>Mobile Development Projects</h3>
+              <p class="certificate-issuer">Academic Exhibitions</p>
+              <p class="certificate-date">2022 - 2023</p>
+              <div class="certificate-skills">
+                <span>Kotlin</span>
+                <span>Android</span>
+                <span>Mobile UI/UX</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="certificate-card">
+            <div class="certificate-image">
+              <div class="certificate-icon">🌐</div>
+            </div>
+            <div class="certificate-info">
+              <h3>Web Development Portfolio</h3>
+              <p class="certificate-issuer">Production Projects</p>
+              <p class="certificate-date">2023 - Present</p>
+              <div class="certificate-skills">
+                <span>Laravel</span>
+                <span>MySQL</span>
+                <span>Full Stack</span>
+              </div>
             </div>
           </div>
         </div>
@@ -112,12 +346,7 @@ import WhyMe from '../components/WhyMe.astro';
         <h2>Contáctame</h2>
         <p>¿Tienes un proyecto en mente? ¡Hablemos!</p>
         <div class="contact-info">
-          <a href="mailto:tu@email.com" class="btn-primary">Enviar Email</a>
-          <div class="social-links">
-            <a href="#" aria-label="GitHub">🔗</a>
-            <a href="#" aria-label="LinkedIn">💼</a>
-            <a href="#" aria-label="Twitter">🐦</a>
-          </div>
+          <a href="mailto:jcga924324@outlook.com" class="btn-primary">Enviar Email</a>
         </div>
       </div>
     </section>
@@ -156,11 +385,19 @@ main {
   overflow: hidden;
   transition: all 0.3s ease;
   border: 1px solid rgba(255, 255, 255, 0.1);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .project-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+.project-card:hover .project-overlay {
+  opacity: 1;
 }
 
 .project-image {
@@ -169,31 +406,130 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.project-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover .project-img {
+  transform: scale(1.05);
 }
 
 .placeholder-image {
   font-size: 3rem;
 }
 
+.project-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.project-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.project-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.8rem 1.5rem;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.github-btn {
+  background: #24292e;
+  color: white;
+}
+
+.github-btn:hover {
+  background: #1a1e22;
+  transform: translateY(-2px);
+}
+
+.demo-btn {
+  background: linear-gradient(45deg, var(--accent-blue), var(--light-blue));
+  color: white;
+}
+
+.demo-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(233, 69, 96, 0.3);
+}
+
 .project-info {
   padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  min-height: 160px;
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.8rem;
+  gap: 1rem;
 }
 
 .project-info h3 {
   color: var(--text-light);
   font-size: 1.5rem;
-  margin-bottom: 0.5rem;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.project-type {
+  padding: 0.3rem 0.8rem;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  flex-shrink: 0;
+  align-self: flex-start;
+}
+
+.project-type.web {
+  background: linear-gradient(45deg, #4CAF50, #45a049);
+  color: white;
+}
+
+.project-type.mobile {
+  background: linear-gradient(45deg, #2196F3, #1976D2);
+  color: white;
 }
 
 .project-info p {
   color: var(--text-muted);
   margin-bottom: 1rem;
+  line-height: 1.6;
+  flex-grow: 1;
 }
 
 .project-tech {
   display: flex;
   gap: 0.5rem;
   flex-wrap: wrap;
+  margin-top: auto;
 }
 
 .project-tech span {
@@ -205,13 +541,92 @@ main {
   font-weight: 500;
 }
 
-/* Skills */
-.skills {
+/* Trayectoria */
+.journey {
+  padding: 6rem 0;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.journey h2 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 4rem;
+  color: var(--text-light);
+}
+
+.timeline {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 30px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(180deg, var(--accent-blue), var(--light-blue));
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 3rem;
+  padding-left: 4rem;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: 21px;
+  top: 0;
+  width: 18px;
+  height: 18px;
+  background: linear-gradient(45deg, var(--accent-blue), var(--light-blue));
+  border-radius: 50%;
+  border: 3px solid var(--primary-dark);
+}
+
+.timeline-content {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 2rem;
+  transition: all 0.3s ease;
+}
+
+.timeline-content:hover {
+  background: rgba(255, 255, 255, 0.08);
+  transform: translateX(10px);
+}
+
+.timeline-content h3 {
+  color: var(--text-light);
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-date {
+  color: var(--light-blue);
+  font-weight: 600;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+.timeline-content p {
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+/* Tools */
+.tools {
   padding: 6rem 0;
   background: rgba(255, 255, 255, 0.05);
 }
 
-.skills h2 {
+.tools h2 {
   text-align: center;
   font-size: 3rem;
   font-weight: 700;
@@ -219,39 +634,173 @@ main {
   color: var(--text-light);
 }
 
-.skills-grid {
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+}
+
+.tool-category {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 2rem;
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.tool-category:hover {
+  background: rgba(255, 255, 255, 0.08);
+  transform: translateY(-5px);
+}
+
+.tool-category h3 {
+  color: var(--text-light);
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  background: linear-gradient(45deg, var(--accent-blue), var(--light-blue));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.tool-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1rem;
+}
+
+.tool-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  min-height: 100px;
+}
+
+.tool-item:hover {
+  background: rgba(255, 255, 255, 0.1);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.tool-item img {
+  width: 40px;
+  height: 40px;
+  margin-bottom: 0.8rem;
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+}
+
+.tool-item:hover img {
+  transform: scale(1.1);
+}
+
+.tool-item span {
+  color: var(--text-light);
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-align: center;
+  line-height: 1.2;
+  margin-top: auto;
+}
+
+/* Certificados */
+.certificates {
+  padding: 6rem 0;
+  background: var(--primary-dark);
+}
+
+.certificates h2 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  color: var(--text-light);
+}
+
+.certificates-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 2rem;
 }
 
-.skill-category {
+.certificate-card {
   background: rgba(255, 255, 255, 0.05);
-  padding: 2rem;
   border-radius: 20px;
+  overflow: hidden;
+  transition: all 0.3s ease;
   border: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.skill-category h3 {
-  color: var(--text-light);
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-  text-align: center;
-}
-
-.skill-list {
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
+  flex-direction: column;
+  height: 100%;
+}
+
+.certificate-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.certificate-image {
+  height: 120px;
+  background: linear-gradient(135deg, var(--accent-blue), var(--light-blue));
+  display: flex;
+  align-items: center;
   justify-content: center;
 }
 
-.skill-list span {
-  background: linear-gradient(45deg, var(--accent-blue), var(--light-blue));
-  color: white;
-  padding: 0.5rem 1rem;
-  border-radius: 20px;
+.certificate-icon {
+  font-size: 2.5rem;
+}
+
+.certificate-info {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 160px;
+}
+
+.certificate-info h3 {
+  color: var(--text-light);
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  line-height: 1.3;
+}
+
+.certificate-issuer {
+  color: var(--light-blue);
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 0.3rem;
+}
+
+.certificate-date {
+  color: var(--text-muted);
   font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.certificate-skills {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-top: auto;
+}
+
+.certificate-skills span {
+  background: linear-gradient(45deg, rgba(15, 52, 96, 0.8), rgba(233, 69, 96, 0.8));
+  color: white;
+  padding: 0.3rem 0.8rem;
+  border-radius: 12px;
+  font-size: 0.8rem;
   font-weight: 500;
 }
 
@@ -309,8 +858,10 @@ main {
 /* Responsive */
 @media (max-width: 768px) {
   .projects h2,
-  .skills h2,
-  .contact h2 {
+  .tools h2,
+  .contact h2,
+  .journey h2,
+  .certificates h2 {
     font-size: 2.5rem;
   }
   
@@ -318,8 +869,111 @@ main {
     grid-template-columns: 1fr;
   }
   
-  .skills-grid {
+  .tools-grid {
     grid-template-columns: 1fr;
   }
+  
+  .certificates-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .tool-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .project-buttons {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+  
+  .project-btn {
+    justify-content: center;
+  }
+  
+  /* Timeline responsive */
+  .timeline::before {
+    left: 15px;
+  }
+  
+  .timeline-item {
+    padding-left: 2.5rem;
+  }
+  
+  .timeline-dot {
+    left: 6px;
+  }
+  
+  .timeline-content {
+    padding: 1.5rem;
+  }
+  
+  .timeline-content:hover {
+    transform: translateX(5px);
+  }
+}
+
+/* Estilos de fuentes personalizadas */
+/* Títulos de sección con fuente personalizada */
+.projects h2,
+.journey h2,
+.tools h2,
+.certificates h2 {
+  font-family: var(--font-titles);
+  font-size: 2.5rem;
+  font-weight: normal;
+  margin-bottom: 3rem;
+  text-align: center;
+  background: linear-gradient(135deg, var(--text-light) 0%, var(--accent-blue) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  letter-spacing: 0.02em;
+}
+
+/* Títulos de proyectos */
+.project-info h3 {
+  font-family: var(--font-titles);
+  font-size: 1.5rem;
+  font-weight: normal;
+  margin-bottom: 1rem;
+  color: var(--text-light);
+  letter-spacing: 0.01em;
+}
+
+/* Descripciones con fuente de contenido */
+.project-description,
+.timeline-content p,
+.certificate-info p {
+  font-family: var(--font-content);
+  line-height: 1.6;
+}
+
+/* Títulos de certificados */
+.certificate-info h3 {
+  font-family: var(--font-titles);
+  font-size: 1.3rem;
+  font-weight: normal;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.01em;
+}
+
+/* Timeline headers */
+.timeline-content h3 {
+  font-family: var(--font-titles);
+  font-size: 1.4rem;
+  font-weight: normal;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.01em;
+}
+
+/* Categorías de herramientas */
+.tools-category h3 {
+  font-family: var(--font-titles);
+  font-size: 1.4rem;
+  font-weight: normal;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: var(--accent-blue);
+  letter-spacing: 0.01em;
 }
 </style>
