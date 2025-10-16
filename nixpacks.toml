@@ -1,18 +1,20 @@
 [variables]
-PORT = "80"
 
+NODE_VERSION = "22.14.0"
+ 
 [phases.setup]
-nixPkgs = ["nodejs_18", "npm-9_x", "caddy"]
 
+nixPkgs = ["nodejs_22"]
+ 
 [phases.install]
+
 cmds = ["npm ci"]
-
+ 
 [phases.build]
+
 cmds = ["npm run build"]
+ 
+[phases.start]
 
-[phases.caddy]
-nixPkgs = ["caddy"]
-cmds = ["caddy fmt --overwrite /assets/Caddyfile"]
-
-[start]
-cmd = "exec caddy run --config /assets/Caddyfile --adapter caddyfile 2>&1"
+cmd = "npm run preview -- --host 0.0.0.0 --port $PORT"
+ 
