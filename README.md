@@ -229,6 +229,22 @@ El diseño responsive fue un reto interesante que me enseñó la importancia de 
 
 ---
 
+## 💭 Preguntas de Reflexión
+
+### 1. ¿Qué diferencia encuentras entre crear un sitio en Astro y hacerlo con HTML tradicional?
+
+Con Astro, creas componentes reutilizables (como un `<nav>`) una sola vez. Con HTML, debes copiar y pegar ese `<nav>` manualmente en cada página.
+
+### 2. ¿Qué beneficios tiene trabajar con un layout en lugar de repetir el mismo código en cada página?
+
+Un layout te permite definir la estructura común (header/footer) en un solo archivo. Si cambias el layout, todas las páginas se actualizan automáticamente.
+
+### 3. ¿Qué ventajas crees que ofrece Astro para proyectos educativos o personales?
+
+Astro es excelente para esos proyectos porque crea sitios web muy rápidos (casi puro HTML) y es muy fácil de aprender, ya que se parece mucho a HTML.
+
+---
+
 ## 📚 Referencias y Recursos
 
 - [Documentación oficial de Astro](https://docs.astro.build)
@@ -241,16 +257,11 @@ El diseño responsive fue un reto interesante que me enseñó la importancia de 
 ## 📧 Contacto
 
 **Alumno:** Juan Carlos  
-**GitHub:** [@JuanCarlos0511](https://github.com/JuanCarlos0511)  
-**LinkedIn:** [linkedin.com/in/juancarlos](https://linkedin.com/in/juancarlos)  
-**Email:** juancarlos@example.com
-
+**GitHub:** [@JuanCarlos0511](https://github.com/JuanCarlos0511)
 ---
 
 **Fecha de entrega:** Octubre 2025  
-**Institución:** [Tu institución]  
-**Profesor:** [Nombre del profesor]
+
 
 ---
 
-Construido con ❤️ usando [Astro](https://astro.build)
